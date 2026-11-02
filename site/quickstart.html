@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="/styles.css?v=2ad657ba86">
+  <link rel="stylesheet" href="/styles.css?v=9565b1fe12">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -56,7 +56,7 @@
           </ul>
         </details>
         <a class="btn ghost sm hide-sm" href="/account" id="nav-account">Sign in</a>
-        <a class="btn primary sm" href="/#install" data-download>Download</a>
+        <a class="btn primary sm" href="/#install">Get started</a>
       </div>
     </div>
   </header>
@@ -84,27 +84,21 @@
         <ul>
           <li><b>Windows 10 or 11</b>, <b>macOS 12 or later</b>, or <b>Linux</b>.</li>
           <li>At least one agent CLI you're already logged in to: <a href="https://docs.claude.com/en/docs/claude-code" rel="noopener">Claude Code</a>, Codex CLI, Gemini CLI, Grok Build or OpenCode. GridHive uses your own subscription login; no API keys.</li>
-          <li>For <code>npx gridhive</code>: Node 20 or later. The desktop app needs nothing else.</li>
+          <li><a href="https://nodejs.org" rel="noopener">Node.js 20</a> or later, and <a href="https://git-scm.com" rel="noopener">git</a> to get the code from GitHub.</li>
         </ul>
 
         <h2 id="install"><span class="step-n">1</span>Install GridHive</h2>
-        <p>Pick the desktop app (tray icon, notifications, auto-update) or run it straight from the terminal.</p>
+        <p>GridHive runs from its source on your own computer. Get it from GitHub, or start it in one line with npx.</p>
         <div class="ostabs" role="tablist" aria-label="How to install">
-          <button type="button" role="tab" id="tab-win" aria-controls="os-win" aria-selected="true" data-tab-os="win">Windows</button>
-          <button type="button" role="tab" id="tab-mac" aria-controls="os-mac" aria-selected="false" tabindex="-1" data-tab-os="mac">Mac</button>
-          <button type="button" role="tab" id="tab-npx" aria-controls="os-npx" aria-selected="false" tabindex="-1">npx / Linux</button>
+          <button type="button" role="tab" id="tab-src" aria-controls="os-src" aria-selected="true">From GitHub</button>
+          <button type="button" role="tab" id="tab-npx" aria-controls="os-npx" aria-selected="false" tabindex="-1">npx</button>
         </div>
-        <div class="ospanel" id="os-win" role="tabpanel" aria-labelledby="tab-win">
-          <div class="dl-row doc-dl"><a class="btn primary" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-Setup-0.0.8.exe" rel="noopener">Download for Windows</a></div>
-          <p>Run the installer. It installs for your user only, no admin needed. The app isn't code-signed yet, so Windows may say <em>"Windows protected your PC"</em>: click <b>More info</b>, then <b>Run anyway</b>.</p>
-        </div>
-        <div class="ospanel" id="os-mac" role="tabpanel" aria-labelledby="tab-mac" hidden>
-          <div class="dl-row doc-dl">
-            <a class="btn primary" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-0.0.8-arm64.dmg" rel="noopener">Mac · Apple Silicon</a>
-            <a class="btn ghost" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-0.0.8-x64.dmg" rel="noopener">Mac · Intel</a>
-          </div>
-          <p>Not sure which? Apple menu &rarr; <b>About This Mac</b>: "Apple M1/M2/M3/M4…" is Apple Silicon. Open the disk image and drag GridHive to <b>Applications</b>.</p>
-          <p>The app isn't signed by Apple yet, so the first launch is blocked: open <b>System Settings &rarr; Privacy &amp; Security</b>, scroll down, click <b>Open Anyway</b> and confirm. You only do this once.</p>
+        <div class="ospanel" id="os-src" role="tabpanel" aria-labelledby="tab-src">
+          <pre><code><span class="pr">$</span> git clone https://github.com/customerimpact/gridhive
+<span class="pr">$</span> cd gridhive
+<span class="pr">$</span> npm install &amp;&amp; npm run build
+<span class="pr">$</span> npm start</code></pre>
+          <p>No git? On <a href="https://github.com/customerimpact/gridhive" rel="noopener">GitHub</a> click <b>Code &rarr; Download ZIP</b>, unzip it and run the last two lines in that folder. <code>npm start</code> opens the board in your browser; keep the terminal open, closing it stops your agents. If <code>npm install</code> can't build <code>node-pty</code>, install your platform's build tools (Visual Studio Build Tools with C++ on Windows, Xcode Command Line Tools on macOS, <code>build-essential</code> on Linux).</p>
         </div>
         <div class="ospanel" id="os-npx" role="tabpanel" aria-labelledby="tab-npx" hidden>
           <pre><code><span class="pr">$</span> npx gridhive</code></pre>
@@ -152,7 +146,7 @@
         <p>The control room for your terminal coding agents. Free and MIT licensed. An independent open-source project, not affiliated with or endorsed by Anthropic, OpenAI, Google or xAI.</p>
       </div>
       <nav class="foot-cols" aria-label="Footer">
-        <div><h4>Product</h4><a href="/#features">Features</a><a href="/#compare">Compare</a><a href="/#install">Download</a><a href="/app">Open web app</a></div>
+        <div><h4>Product</h4><a href="/#features">Features</a><a href="/#compare">Compare</a><a href="/#install">Get started</a><a href="/app">Open web app</a></div>
         <div><h4>Developers</h4><a href="/quickstart">Quickstart</a><a href="/developers">Developer guide</a><a href="/developers#recipes">Recipes &amp; badges</a><a href="https://github.com/customerimpact/gridhive/releases" rel="noopener">Changelog</a></div>
         <div><h4>Community</h4><a href="https://github.com/customerimpact/gridhive" rel="noopener">GitHub</a><a href="https://github.com/customerimpact/gridhive/issues" rel="noopener">Report an issue</a></div>
         <div><h4>Legal</h4><a href="/privacy">Privacy</a><a href="https://github.com/customerimpact/gridhive/blob/main/LICENSE" rel="noopener">License</a><a href="https://github.com/customerimpact/gridhive/blob/main/TRADEMARKS.md" rel="noopener">Trademarks</a></div>
@@ -161,6 +155,6 @@
     <p class="wrap foot-copy">&copy; 2026 GridHive · Claude, Codex, Gemini, Grok and OpenCode are trademarks of their owners.</p>
   </footer>
 
-  <script src="/main.js?v=ea593a37c1" defer></script>
+  <script src="/main.js?v=320cf193fe" defer></script>
 </body>
 </html>

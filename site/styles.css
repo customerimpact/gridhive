@@ -339,6 +339,9 @@ p { margin: 0; }
 .howto .card { display: flex; gap: 16px; }
 .howto .btn { margin-top: 14px; }
 .howto p + p { margin-top: 10px; }
+.howto .card > div { min-width: 0; }
+.howto pre { margin-top: 12px; }
+.howto pre + p { margin-top: 10px; }
 .dl-row { display: flex; flex-wrap: wrap; gap: 10px; }
 .dl-row .btn { flex: 1 1 100%; }
 @media (min-width: 520px) { .dl-row .btn { flex: 0 0 auto; } }

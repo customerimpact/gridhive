@@ -125,15 +125,6 @@
       .catch(() => {});
   }
 
-  // Show only the download for this computer's OS (both stay when we can't tell, e.g. Linux)
-  const ua = navigator.userAgentData?.platform || navigator.platform || navigator.userAgent;
-  const os = /mac/i.test(ua) ? 'mac' : /win/i.test(ua) ? 'win' : null;
-  if (os) {
-    document.querySelectorAll('[data-os]').forEach((btn) => {
-      if (btn.dataset.os !== os) btn.hidden = true;
-    });
-  }
-
   // Language menu: mark the current language, close on outside click or Escape
   const lang = document.querySelector('.lang');
   if (lang) {
@@ -146,14 +137,12 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') lang.open = false; });
   }
 
-  // OS tabs on the docs pages
+  // Install tabs on the docs pages (From GitHub | npx)
   document.querySelectorAll('.ostabs').forEach((bar) => {
     const buttons = [...bar.querySelectorAll('[role="tab"]')];
     group(buttons, 'aria-selected', (btn) => {
       buttons.forEach((b) => { document.getElementById(b.getAttribute('aria-controls')).hidden = b !== btn; });
     });
-    const mine = os && buttons.find((b) => b.dataset.tabOs === os);
-    if (mine) mine.click();
   });
 
   // Docs pages: highlight the section you're reading in the side menu

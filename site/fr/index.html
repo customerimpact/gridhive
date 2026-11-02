@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="/styles.css?v=2ad657ba86">
+  <link rel="stylesheet" href="/styles.css?v=9565b1fe12">
 
   <script type="application/ld+json">
   {
@@ -48,11 +48,11 @@
     "@type": "SoftwareApplication",
     "name": "GridHive",
     "applicationCategory": "DeveloperApplication",
-    "operatingSystem": "Windows 10, Windows 11, macOS 12+",
+    "operatingSystem": "Windows, macOS, Linux",
     "softwareVersion": "0.0.8",
     "license": "https://opensource.org/licenses/MIT",
     "url": "https://gridhive.dev/",
-    "downloadUrl": "https://gridhive.dev/#install",
+    "downloadUrl": "https://github.com/customerimpact/gridhive",
     "codeRepository": "https://github.com/customerimpact/gridhive",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "description": "Salle de contrôle gratuite et open source pour les agents de code en terminal (Claude Code, Codex, Gemini CLI, Grok, OpenCode), en local, avec vos propres connexions."
@@ -96,7 +96,7 @@
           </ul>
         </details>
         <a class="btn ghost sm hide-sm" href="/account" id="nav-account">Connexion</a>
-        <a class="btn primary sm" href="#install" data-download>Télécharger</a>
+        <a class="btn primary sm" href="#install">Commencer</a>
       </div>
     </div>
   </header>
@@ -106,7 +106,7 @@
     <section class="hero gridded">
       <div class="aurora" aria-hidden="true"></div>
       <div class="wrap">
-        <p class="pill"><b>NOUVEAU</b> Contrôle depuis le téléphone &amp; recettes d'équipe partageables · Windows &amp; Mac</p>
+        <p class="pill"><b>NOUVEAU</b> Contrôle depuis le téléphone &amp; recettes d'équipe partageables · Windows, Mac &amp; Linux</p>
         <h1>La salle de contrôle de vos <span class="hl">agents en terminal</span>.</h1>
         <p class="lede">Claude Code, Codex, Gemini CLI, Grok et OpenCode côte à côte, dans de vrais terminaux, sur un seul tableau. Les orchestrateurs distribuent les tâches, une boîte de réception unique vous dit qui a besoin de vous, et votre téléphone vous permet de les suivre, de leur répondre et de les lancer depuis le canapé. Tout tourne sur votre ordinateur, avec les abonnements que vous avez déjà.</p>
         <div class="npx">
@@ -115,15 +115,11 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copier</span>
           </button>
         </div>
-        <p class="npx-note">Lance le tableau dans votre navigateur. Nécessite Node 20+. Vous préférez une app ? Téléchargez-la ci-dessous.</p>
+        <p class="npx-note">Lance le tableau dans votre navigateur. Nécessite Node 20+. Ou récupérez le code sur GitHub et lancez-le vous-même : voir ci-dessous.</p>
         <div class="ctas">
-          <a class="btn primary lg" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-Setup-0.0.8.exe" rel="noopener" data-os="win">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5.1 10.4 4v7.2H3V5.1Zm0 13.8 7.4 1.1v-7.1H3v6Zm8.2 1.2L21 21.5V12.9h-9.8v7.2Zm0-16.2v7.3H21V2.5l-9.8 1.4Z"/></svg>
-            Télécharger pour Windows
-          </a>
-          <a class="btn primary lg" href="#install-mac" data-os="mac">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.75-.96 2.79 1.02.08 2.05-.52 2.68-1.27Z"/></svg>
-            Télécharger pour Mac
+          <a class="btn primary lg" href="#install">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            Lancer depuis GitHub
           </a>
           <a class="btn ghost lg" href="https://github.com/customerimpact/gridhive" rel="noopener">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
@@ -135,7 +131,7 @@
             Ouvrir l'app web
           </a>
         </div>
-        <p class="fine">v0.0.8 · Windows 10/11 x64 · macOS 12+ (Apple Silicon &amp; Intel) · Linux : <span class="mono">npx gridhive</span> · <a href="/quickstart">Guide de démarrage rapide</a></p>
+        <p class="fine">v0.0.8 · Windows, macOS &amp; Linux · Node 20+ · <a href="https://github.com/customerimpact/gridhive" rel="noopener">Code source sur GitHub</a> · <a href="/quickstart">Guide de démarrage rapide</a></p>
       </div>
 
       <div class="wrap wide">
@@ -519,8 +515,8 @@
           </li>
           <li class="card">
             <span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2.5"/><path d="M8 21h8M12 17v4"/><circle cx="18" cy="7" r="2.5" fill="currentColor" stroke="none"/></svg></span>
-            <h3>Une vraie app Windows &amp; Mac</h3>
-            <p>Icône dans la zone de notification ou la barre des menus, badge dans la barre des tâches ou le Dock, et notifications natives. Détachez des consoles sur un second écran et choisissez parmi quatre thèmes.</p>
+            <h3>Fonctionne sur n'importe quel ordinateur</h3>
+            <p>Windows, macOS ou Linux, dans votre navigateur. Détachez des consoles sur un second écran et choisissez parmi quatre thèmes.</p>
           </li>
         </ul>
       </div>
@@ -633,30 +629,28 @@
           <div class="req card">
             <h3>Prérequis</h3>
             <ul>
-              <li><b>Windows 10 ou 11</b> (x64), ou <b>macOS 12 ou ultérieur</b> (Apple Silicon ou Intel) pour l'app de bureau</li>
+              <li><b>Windows, macOS ou Linux</b></li>
+              <li><b><a href="https://nodejs.org" rel="noopener">Node.js 20</a></b> ou ultérieur, et <b><a href="https://git-scm.com" rel="noopener">git</a></b></li>
               <li><b><a href="https://docs.claude.com/en/docs/claude-code" rel="noopener">Claude Code</a></b> installé et connecté. Lancez d'abord <span class="mono">claude</span> une fois dans un terminal.</li>
-              <li><b>Linux, ou sans installeur :</b> <span class="mono">npx gridhive</span> (nécessite Node 20+)</li>
             </ul>
           </div>
           <ol class="howto">
             <li class="card">
               <span class="n">1</span>
               <div>
-                <h3>Téléchargez l'app</h3>
-                <p>Windows : <span class="mono">GridHive-Setup-0.0.8.exe</span>. Mac : l'image disque correspondant à votre puce. Vous hésitez ? Menu Apple &rarr; <b>About This Mac</b> (À propos de ce Mac) : « Apple M1/M2/M3/M4… » correspond à Apple Silicon, « Intel » à Intel.</p>
-                <div class="dl-row" id="install-mac">
-                  <a class="btn primary" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-Setup-0.0.8.exe" rel="noopener">Windows</a>
-                  <a class="btn primary" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-0.0.8-arm64.dmg" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.75-.96 2.79 1.02.08 2.05-.52 2.68-1.27Z"/></svg> Mac · Apple Silicon</a>
-                  <a class="btn ghost" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-0.0.8-x64.dmg" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.75-.96 2.79 1.02.08 2.05-.52 2.68-1.27Z"/></svg> Mac · Intel</a>
-                </div>
+                <h3>Récupérez le code sur GitHub</h3>
+                <p>Clonez le dépôt, ou cliquez sur <b>Code &rarr; Download ZIP</b> sur <a href="https://github.com/customerimpact/gridhive" rel="noopener">GitHub</a> et décompressez-le.</p>
+                <pre><code><span class="pr">$</span> git clone https://github.com/customerimpact/gridhive
+<span class="pr">$</span> cd gridhive</code></pre>
               </div>
             </li>
             <li class="card">
               <span class="n">2</span>
               <div>
-                <h3>Installez-la et autorisez-la la première fois</h3>
-                <p><b>Windows :</b> l'installation se fait pour votre utilisateur uniquement, sans droits administrateur. L'app n'est pas encore signée, Windows peut donc afficher <em>« Windows a protégé votre ordinateur »</em>. Cliquez sur <b>More info</b> (Informations complémentaires), puis sur <b>Run anyway</b> (Exécuter quand même).</p>
-                <p><b>Mac :</b> ouvrez l'image disque et faites glisser GridHive dans <b>Applications</b>. L'app n'est pas encore signée par Apple, le premier lancement est donc bloqué : ouvrez <b>System Settings &rarr; Privacy &amp; Security</b> (Réglages Système → Confidentialité et sécurité), faites défiler vers le bas, cliquez sur <b>Open Anyway</b> (Ouvrir quand même), puis confirmez. Vous ne le faites qu'une fois. Les nouvelles versions sont annoncées dans le menu de la barre des menus.</p>
+                <h3>Installez-le et lancez-le</h3>
+                <pre><code><span class="pr">$</span> npm install &amp;&amp; npm run build
+<span class="pr">$</span> npm start   <span class="cm"># ouvre le tableau dans votre navigateur</span></code></pre>
+                <p>Gardez le terminal ouvert : le fermer arrête vos agents. Si <span class="mono">npm install</span> n'arrive pas à compiler <span class="mono">node-pty</span>, installez les outils de compilation de votre plateforme (Visual Studio Build Tools avec C++ sous Windows, Xcode Command Line Tools sous macOS, <span class="mono">build-essential</span> sous Linux).</p>
               </div>
             </li>
             <li class="card">
@@ -670,25 +664,13 @@
         </div>
         <div class="source card" id="npx">
           <div class="source-head">
-            <h3>Ou lancez-le avec npx <span class="muted">(Windows, macOS, Linux)</span></h3>
+            <h3>Raccourci : lancez-le avec npx <span class="muted">(sans cloner le dépôt)</span></h3>
             <button class="copy-btn" type="button" data-copy="npx gridhive">
               <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copier</span>
             </button>
           </div>
           <pre><code><span class="pr">$</span> npx gridhive   <span class="cm"># lance le tableau et l'ouvre dans votre navigateur</span></code></pre>
           <p class="source-note">Nécessite Node 20 ou ultérieur. Ajoutez <span class="mono">--port 5000</span> pour utiliser un autre port, ou installez-le une fois pour toutes avec <span class="mono">npm i -g gridhive</span> puis lancez <span class="mono">gridhive</span>.</p>
-        </div>
-        <div class="source card">
-          <div class="source-head">
-            <h3>Lancer depuis les sources <span class="muted">(Windows, macOS, Linux)</span></h3>
-            <button class="copy-btn" type="button" data-copy="git clone https://github.com/customerimpact/gridhive && cd gridhive && npm install && npm run build && npm start">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copier</span>
-            </button>
-          </div>
-          <pre><code><span class="pr">$</span> git clone https://github.com/customerimpact/gridhive
-<span class="pr">$</span> cd gridhive
-<span class="pr">$</span> npm install &amp;&amp; npm run build
-<span class="pr">$</span> npm start   <span class="cm"># ouvre le tableau dans votre navigateur</span></code></pre>
         </div>
       </div>
     </section>
@@ -726,16 +708,12 @@
             <p>Non. Chaque agent conserve ses propres demandes d'autorisation. GridHive vous signale quand l'une d'elles attend et vous permet d'y répondre depuis la boîte de réception Actions.</p>
           </details>
           <details>
-            <summary>Existe-t-il une version Mac ?</summary>
-            <p>Oui. Téléchargez ci-dessus l'image disque pour Mac Apple Silicon (M1 et plus récents) ou Intel ; macOS 12 ou ultérieur est requis. Elle n'est pas encore signée par Apple : autorisez-la une fois dans System Settings &rarr; Privacy &amp; Security &rarr; <b>Open Anyway</b> (Réglages Système → Confidentialité et sécurité → Ouvrir quand même). Sous Linux, lancez GridHive depuis les sources et utilisez-le dans votre navigateur.</p>
+            <summary>Fonctionne-t-il sur Mac et Linux ?</summary>
+            <p>Oui. GridHive fonctionne sous Windows, macOS et Linux. Récupérez le code sur GitHub (ou lancez <span class="mono">npx gridhive</span>) et utilisez-le dans votre navigateur. Node 20 ou ultérieur est requis.</p>
           </details>
           <details>
             <summary>Où sont stockées mes données ?</summary>
-            <p>Sur votre ordinateur. La disposition du tableau et les réglages se trouvent dans <span class="mono">~/.gridhive</span>, dans votre dossier personnel. Les conversations restent dans les dossiers de Claude Code. L'app de bureau ne fait qu'un seul appel réseau de son propre chef : la recherche de mises à jour sur GitHub Releases.</p>
-          </details>
-          <details>
-            <summary>Pourquoi Windows affiche-t-il « Windows a protégé votre ordinateur » ?</summary>
-            <p>L'installeur n'est pas encore signé, SmartScreen ne le reconnaît donc pas. Cliquez sur <b>More info</b> (Informations complémentaires), puis sur <b>Run anyway</b> (Exécuter quand même). Le code source complet et le workflow de build sont sur GitHub si vous préférez vérifier ou compiler vous-même.</p>
+            <p>Sur votre ordinateur. La disposition du tableau et les réglages se trouvent dans <span class="mono">~/.gridhive</span>, dans votre dossier personnel. Les conversations restent dans les dossiers de Claude Code.</p>
           </details>
           <details>
             <summary>GridHive est-il affilié à Anthropic ?</summary>
@@ -754,8 +732,7 @@
           <h2>Prêt à lancer votre ruche ?</h2>
           <p class="sub">Gratuit, open source, et opérationnel sur votre machine en deux minutes.</p>
           <div class="ctas">
-            <a class="btn primary lg" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-Setup-0.0.8.exe" rel="noopener">Télécharger pour Windows</a>
-            <a class="btn primary lg" href="#install-mac"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.75-.96 2.79 1.02.08 2.05-.52 2.68-1.27Z"/></svg> Télécharger pour Mac</a>
+            <a class="btn primary lg" href="#install">Lancer depuis GitHub</a>
             <a class="btn ghost lg" href="https://github.com/customerimpact/gridhive" rel="noopener">Star sur GitHub</a>
           </div>
           <form class="waitlist" id="waitlist" novalidate>
@@ -781,7 +758,7 @@
         <p>La salle de contrôle de vos agents de code en terminal. Gratuit et sous licence MIT. Un projet open source indépendant, ni affilié à Anthropic, OpenAI, Google ou xAI, ni soutenu par eux.</p>
       </div>
       <nav class="foot-cols" aria-label="Pied de page">
-        <div><h4>Produit</h4><a href="#features">Fonctionnalités</a><a href="#compare">Comparatif</a><a href="#install">Télécharger</a><a href="/app">Ouvrir l'app web</a></div>
+        <div><h4>Produit</h4><a href="#features">Fonctionnalités</a><a href="#compare">Comparatif</a><a href="#install">Commencer</a><a href="/app">Ouvrir l'app web</a></div>
         <div><h4>Développeurs</h4><a href="/quickstart">Démarrage rapide</a><a href="/developers">Guide développeur</a><a href="/developers#recipes">Recettes &amp; badges</a><a href="https://github.com/customerimpact/gridhive/releases" rel="noopener">Changelog</a></div>
         <div><h4>Communauté</h4><a href="https://github.com/customerimpact/gridhive" rel="noopener">GitHub</a><a href="https://github.com/customerimpact/gridhive/issues" rel="noopener">Signaler un problème</a></div>
         <div><h4>Juridique</h4><a href="/privacy">Confidentialité</a><a href="https://github.com/customerimpact/gridhive/blob/main/LICENSE" rel="noopener">Licence</a><a href="https://github.com/customerimpact/gridhive/blob/main/TRADEMARKS.md" rel="noopener">Marques</a></div>
@@ -790,7 +767,7 @@
     <p class="wrap foot-copy">&copy; 2026 GridHive · Claude, Codex, Gemini, Grok et OpenCode sont des marques de leurs propriétaires respectifs.</p>
   </footer>
 
-  <script src="/main.js?v=ea593a37c1" defer></script>
+  <script src="/main.js?v=320cf193fe" defer></script>
   <script src="/hero-demo.js?v=0579434e29" defer></script>
 </body>
 </html>

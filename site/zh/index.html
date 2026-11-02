@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="/styles.css?v=2ad657ba86">
+  <link rel="stylesheet" href="/styles.css?v=9565b1fe12">
 
   <script type="application/ld+json">
   {
@@ -48,11 +48,11 @@
     "@type": "SoftwareApplication",
     "name": "GridHive",
     "applicationCategory": "DeveloperApplication",
-    "operatingSystem": "Windows 10, Windows 11, macOS 12+",
+    "operatingSystem": "Windows, macOS, Linux",
     "softwareVersion": "0.0.8",
     "license": "https://opensource.org/licenses/MIT",
     "url": "https://gridhive.dev/",
-    "downloadUrl": "https://gridhive.dev/#install",
+    "downloadUrl": "https://github.com/customerimpact/gridhive",
     "codeRepository": "https://github.com/customerimpact/gridhive",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "description": "免费开源的终端编程智能体控制室（支持 Claude Code、Codex、Gemini CLI、Grok、OpenCode），在本地运行，使用你自己的登录账号。"
@@ -96,7 +96,7 @@
           </ul>
         </details>
         <a class="btn ghost sm hide-sm" href="/account" id="nav-account">登录</a>
-        <a class="btn primary sm" href="#install" data-download>下载</a>
+        <a class="btn primary sm" href="#install">开始使用</a>
       </div>
     </div>
   </header>
@@ -106,7 +106,7 @@
     <section class="hero gridded">
       <div class="aurora" aria-hidden="true"></div>
       <div class="wrap">
-        <p class="pill"><b>新功能</b> 手机遥控与可分享的团队配方 · Windows 和 Mac</p>
+        <p class="pill"><b>新功能</b> 手机遥控与可分享的团队配方 · Windows、Mac 和 Linux</p>
         <h1><span class="nb">你的</span><span class="hl nb">终端智能体</span><span class="nb">控制室。</span></h1>
         <p class="lede">Claude Code、Codex、Gemini CLI、Grok 和 OpenCode 在同一块看板上的真实终端里并排运行。编排智能体负责分派任务，统一收件箱告诉你谁在等你，躺在沙发上也能用手机跟进、回复和启动它们。一切都在你自己的电脑上运行，用的是你已有的订阅。</p>
         <div class="npx">
@@ -115,15 +115,11 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>复制</span>
           </button>
         </div>
-        <p class="npx-note">在浏览器中启动看板，需要 Node 20+。更想用桌面应用？在下方下载。</p>
+        <p class="npx-note">在浏览器中启动看板，需要 Node 20+。也可以从 GitHub 获取代码自己运行，详见下方。</p>
         <div class="ctas">
-          <a class="btn primary lg" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-Setup-0.0.8.exe" rel="noopener" data-os="win">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5.1 10.4 4v7.2H3V5.1Zm0 13.8 7.4 1.1v-7.1H3v6Zm8.2 1.2L21 21.5V12.9h-9.8v7.2Zm0-16.2v7.3H21V2.5l-9.8 1.4Z"/></svg>
-            下载 Windows 版
-          </a>
-          <a class="btn primary lg" href="#install-mac" data-os="mac">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.75-.96 2.79 1.02.08 2.05-.52 2.68-1.27Z"/></svg>
-            下载 Mac 版
+          <a class="btn primary lg" href="#install">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            从 GitHub 运行
           </a>
           <a class="btn ghost lg" href="https://github.com/customerimpact/gridhive" rel="noopener">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
@@ -135,7 +131,7 @@
             打开网页版
           </a>
         </div>
-        <p class="fine">v0.0.8 · Windows 10/11 x64 · macOS 12+（Apple Silicon 和 Intel）· Linux：<span class="mono">npx gridhive</span> · <a href="/quickstart">快速上手指南</a></p>
+        <p class="fine">v0.0.8 · Windows、macOS 和 Linux · Node 20+ · <a href="https://github.com/customerimpact/gridhive" rel="noopener">GitHub 上的源码</a> · <a href="/quickstart">快速上手指南</a></p>
       </div>
 
       <div class="wrap wide">
@@ -519,8 +515,8 @@
           </li>
           <li class="card">
             <span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2.5"/><path d="M8 21h8M12 17v4"/><circle cx="18" cy="7" r="2.5" fill="currentColor" stroke="none"/></svg></span>
-            <h3>真正的 Windows 和 Mac 应用</h3>
-            <p>托盘或菜单栏图标、任务栏或 Dock 角标，以及原生通知。可以把控制台弹出到第二块显示器，还有四种主题可选。</p>
+            <h3>任何电脑都能运行</h3>
+            <p>支持 Windows、macOS 和 Linux，在浏览器中使用。可以把控制台弹出到第二块显示器，还有四种主题可选。</p>
           </li>
         </ul>
       </div>
@@ -633,30 +629,28 @@
           <div class="req card">
             <h3>系统要求</h3>
             <ul>
-              <li>桌面应用需要 <b>Windows 10 或 11</b>（x64），或 <b>macOS 12 及以上</b>（Apple Silicon 或 Intel）</li>
+              <li><b>Windows、macOS 或 Linux</b></li>
+              <li><b><a href="https://nodejs.org" rel="noopener">Node.js 20</a></b> 或更高版本，以及 <b><a href="https://git-scm.com" rel="noopener">git</a></b></li>
               <li>已安装并登录 <b><a href="https://docs.claude.com/en/docs/claude-code" rel="noopener">Claude Code</a></b>。请先在终端里运行一次 <span class="mono">claude</span>。</li>
-              <li><b>Linux，或不想用安装程序：</b><span class="mono">npx gridhive</span>（需要 Node 20+）</li>
             </ul>
           </div>
           <ol class="howto">
             <li class="card">
               <span class="n">1</span>
               <div>
-                <h3>下载应用</h3>
-                <p>Windows：<span class="mono">GridHive-Setup-0.0.8.exe</span>。Mac：选择与芯片对应的磁盘映像。不确定是哪种？打开苹果菜单 &rarr; <b>About This Mac</b>（关于本机）：显示“Apple M1/M2/M3/M4…”的是 Apple Silicon，显示“Intel”的是 Intel。</p>
-                <div class="dl-row" id="install-mac">
-                  <a class="btn primary" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-Setup-0.0.8.exe" rel="noopener">Windows</a>
-                  <a class="btn primary" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-0.0.8-arm64.dmg" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.75-.96 2.79 1.02.08 2.05-.52 2.68-1.27Z"/></svg> Mac · Apple Silicon</a>
-                  <a class="btn ghost" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-0.0.8-x64.dmg" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.75-.96 2.79 1.02.08 2.05-.52 2.68-1.27Z"/></svg> Mac · Intel</a>
-                </div>
+                <h3>从 GitHub 获取代码</h3>
+                <p>克隆仓库，或者在 <a href="https://github.com/customerimpact/gridhive" rel="noopener">GitHub</a> 上点击 <b>Code &rarr; Download ZIP</b> 并解压。</p>
+                <pre><code><span class="pr">$</span> git clone https://github.com/customerimpact/gridhive
+<span class="pr">$</span> cd gridhive</code></pre>
               </div>
             </li>
             <li class="card">
               <span class="n">2</span>
               <div>
-                <h3>安装，并在首次启动时放行</h3>
-                <p><b>Windows：</b>仅为当前用户安装，无需管理员权限。应用暂未进行代码签名，Windows 可能会提示<em>“Windows 已保护你的电脑”</em>。点击 <b>More info</b>（更多信息），再点击 <b>Run anyway</b>（仍要运行）。</p>
-                <p><b>Mac：</b>打开磁盘映像，把 GridHive 拖进 <b>Applications</b>（应用程序）文件夹。应用暂未经过 Apple 签名，首次启动会被拦截：打开 <b>System Settings &rarr; Privacy &amp; Security</b>（系统设置 → 隐私与安全性），向下滚动并点击 <b>Open Anyway</b>（仍要打开），然后确认。只需操作一次。有新版本时，菜单栏菜单中会提示。</p>
+                <h3>安装并启动</h3>
+                <pre><code><span class="pr">$</span> npm install &amp;&amp; npm run build
+<span class="pr">$</span> npm start   <span class="cm"># 在浏览器中打开看板</span></code></pre>
+                <p>请保持终端开着：关闭它会停止你的智能体。如果 <span class="mono">npm install</span> 无法编译 <span class="mono">node-pty</span>，请安装你所用平台的构建工具（Windows 上是带 C++ 的 Visual Studio Build Tools，macOS 上是 Xcode Command Line Tools，Linux 上是 <span class="mono">build-essential</span>）。</p>
               </div>
             </li>
             <li class="card">
@@ -670,25 +664,13 @@
         </div>
         <div class="source card" id="npx">
           <div class="source-head">
-            <h3>或者用 npx 运行 <span class="muted">（Windows、macOS、Linux）</span></h3>
+            <h3>捷径：用 npx 运行 <span class="muted">（无需克隆）</span></h3>
             <button class="copy-btn" type="button" data-copy="npx gridhive">
               <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>复制</span>
             </button>
           </div>
           <pre><code><span class="pr">$</span> npx gridhive   <span class="cm"># 启动看板并在浏览器中打开</span></code></pre>
           <p class="source-note">需要 Node 20 或更高版本。加上 <span class="mono">--port 5000</span> 可换用其他端口；也可以用 <span class="mono">npm i -g gridhive</span> 全局安装一次，之后直接运行 <span class="mono">gridhive</span>。</p>
-        </div>
-        <div class="source card">
-          <div class="source-head">
-            <h3>从源码运行 <span class="muted">（Windows、macOS、Linux）</span></h3>
-            <button class="copy-btn" type="button" data-copy="git clone https://github.com/customerimpact/gridhive && cd gridhive && npm install && npm run build && npm start">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>复制</span>
-            </button>
-          </div>
-          <pre><code><span class="pr">$</span> git clone https://github.com/customerimpact/gridhive
-<span class="pr">$</span> cd gridhive
-<span class="pr">$</span> npm install &amp;&amp; npm run build
-<span class="pr">$</span> npm start   <span class="cm"># 在浏览器中打开看板</span></code></pre>
         </div>
       </div>
     </section>
@@ -726,16 +708,12 @@
             <p>不会。每个智能体都保留自己的权限提示。有提示在等待时，GridHive 会通知你，并让你在 Actions 收件箱中回复。</p>
           </details>
           <details>
-            <summary>有 Mac 版吗？</summary>
-            <p>有。请在上方下载适用于 Apple Silicon（M1 及更新机型）或 Intel Mac 的磁盘映像，需要 macOS 12 或更高版本。应用暂未经过 Apple 签名，需要在 System Settings &rarr; Privacy &amp; Security &rarr; <b>Open Anyway</b> 中放行一次。在 Linux 上，请从源码运行 GridHive，并在浏览器中使用。</p>
+            <summary>Mac 和 Linux 上能用吗？</summary>
+            <p>能。GridHive 支持 Windows、macOS 和 Linux。从 GitHub 获取代码（或运行 <span class="mono">npx gridhive</span>），然后在浏览器中使用。需要 Node 20 或更高版本。</p>
           </details>
           <details>
             <summary>我的数据存在哪里？</summary>
-            <p>就在你的电脑上。看板布局和设置保存在主目录下的 <span class="mono">~/.gridhive</span> 中，对话则留在 Claude Code 自己的文件夹里。桌面应用自身只会发起一种网络请求：检查 GitHub Releases 上有没有更新。</p>
-          </details>
-          <details>
-            <summary>为什么 Windows 提示“Windows 已保护你的电脑”？</summary>
-            <p>安装程序暂未进行代码签名，所以 SmartScreen 无法识别它。点击 <b>More info</b>（更多信息），再点击 <b>Run anyway</b>（仍要运行）即可。如果你想自己检查或构建，完整源码和构建流程都在 GitHub 上。</p>
+            <p>就在你的电脑上。看板布局和设置保存在主目录下的 <span class="mono">~/.gridhive</span> 中，对话则留在 Claude Code 自己的文件夹里。</p>
           </details>
           <details>
             <summary>GridHive 和 Anthropic 有关系吗？</summary>
@@ -754,8 +732,7 @@
           <h2>准备好让你的蜂巢运转起来了吗？</h2>
           <p class="sub">免费、开源，两分钟就能在你自己的机器上跑起来。</p>
           <div class="ctas">
-            <a class="btn primary lg" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-Setup-0.0.8.exe" rel="noopener">下载 Windows 版</a>
-            <a class="btn primary lg" href="#install-mac"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.75-.96 2.79 1.02.08 2.05-.52 2.68-1.27Z"/></svg> 下载 Mac 版</a>
+            <a class="btn primary lg" href="#install">从 GitHub 运行</a>
             <a class="btn ghost lg" href="https://github.com/customerimpact/gridhive" rel="noopener">在 GitHub 上点星</a>
           </div>
           <form class="waitlist" id="waitlist" novalidate>
@@ -781,7 +758,7 @@
         <p>终端编程智能体的控制室。免费，采用 MIT 许可。独立开源项目，与 Anthropic、OpenAI、Google 或 xAI 均无关联，也未获其背书。</p>
       </div>
       <nav class="foot-cols" aria-label="页脚">
-        <div><h4>产品</h4><a href="#features">功能</a><a href="#compare">对比</a><a href="#install">下载</a><a href="/app">打开网页版</a></div>
+        <div><h4>产品</h4><a href="#features">功能</a><a href="#compare">对比</a><a href="#install">开始使用</a><a href="/app">打开网页版</a></div>
         <div><h4>开发者</h4><a href="/quickstart">快速上手</a><a href="/developers">开发者指南</a><a href="/developers#recipes">配方与徽章</a><a href="https://github.com/customerimpact/gridhive/releases" rel="noopener">更新日志</a></div>
         <div><h4>社区</h4><a href="https://github.com/customerimpact/gridhive" rel="noopener">GitHub</a><a href="https://github.com/customerimpact/gridhive/issues" rel="noopener">报告问题</a></div>
         <div><h4>法律</h4><a href="/privacy">隐私</a><a href="https://github.com/customerimpact/gridhive/blob/main/LICENSE" rel="noopener">许可证</a><a href="https://github.com/customerimpact/gridhive/blob/main/TRADEMARKS.md" rel="noopener">商标</a></div>
@@ -790,7 +767,7 @@
     <p class="wrap foot-copy">&copy; 2026 GridHive · Claude、Codex、Gemini、Grok 和 OpenCode 是其各自所有者的商标。</p>
   </footer>
 
-  <script src="/main.js?v=ea593a37c1" defer></script>
+  <script src="/main.js?v=320cf193fe" defer></script>
   <script src="/hero-demo.js?v=0579434e29" defer></script>
 </body>
 </html>

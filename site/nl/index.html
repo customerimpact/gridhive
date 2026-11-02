@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="/styles.css?v=2ad657ba86">
+  <link rel="stylesheet" href="/styles.css?v=9565b1fe12">
 
   <script type="application/ld+json">
   {
@@ -48,11 +48,11 @@
     "@type": "SoftwareApplication",
     "name": "GridHive",
     "applicationCategory": "DeveloperApplication",
-    "operatingSystem": "Windows 10, Windows 11, macOS 12+",
+    "operatingSystem": "Windows, macOS, Linux",
     "softwareVersion": "0.0.8",
     "license": "https://opensource.org/licenses/MIT",
     "url": "https://gridhive.dev/",
-    "downloadUrl": "https://gridhive.dev/#install",
+    "downloadUrl": "https://github.com/customerimpact/gridhive",
     "codeRepository": "https://github.com/customerimpact/gridhive",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "description": "Gratis, open-source controlekamer voor coding agents in de terminal (Claude Code, Codex, Gemini CLI, Grok, OpenCode), lokaal, op je eigen logins."
@@ -96,7 +96,7 @@
           </ul>
         </details>
         <a class="btn ghost sm hide-sm" href="/account" id="nav-account">Inloggen</a>
-        <a class="btn primary sm" href="#install" data-download>Download</a>
+        <a class="btn primary sm" href="#install">Aan de slag</a>
       </div>
     </div>
   </header>
@@ -106,7 +106,7 @@
     <section class="hero gridded">
       <div class="aurora" aria-hidden="true"></div>
       <div class="wrap">
-        <p class="pill"><b>NIEUW</b> Bediening vanaf je telefoon &amp; deelbare teamrecepten · Windows &amp; Mac</p>
+        <p class="pill"><b>NIEUW</b> Bediening vanaf je telefoon &amp; deelbare teamrecepten · Windows, Mac &amp; Linux</p>
         <h1>De controlekamer voor je <span class="hl">terminal-agents</span>.</h1>
         <p class="lede">Claude Code, Codex, Gemini CLI, Grok en OpenCode naast elkaar in echte terminals op één board. Orchestrators verdelen de jobs, één inbox toont wie je nodig heeft, en met je telefoon volg je ze, antwoord je en start je ze vanuit je luie stoel. Het draait op je eigen computer, op de abonnementen die je al hebt.</p>
         <div class="npx">
@@ -115,15 +115,11 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Kopieer</span>
           </button>
         </div>
-        <p class="npx-note">Start het board in je browser. Vereist Node 20+. Liever een app? Download die hieronder.</p>
+        <p class="npx-note">Start het board in je browser. Vereist Node 20+. Of haal de code van GitHub en draai het zelf: zie hieronder.</p>
         <div class="ctas">
-          <a class="btn primary lg" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-Setup-0.0.8.exe" rel="noopener" data-os="win">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5.1 10.4 4v7.2H3V5.1Zm0 13.8 7.4 1.1v-7.1H3v6Zm8.2 1.2L21 21.5V12.9h-9.8v7.2Zm0-16.2v7.3H21V2.5l-9.8 1.4Z"/></svg>
-            Download voor Windows
-          </a>
-          <a class="btn primary lg" href="#install-mac" data-os="mac">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.75-.96 2.79 1.02.08 2.05-.52 2.68-1.27Z"/></svg>
-            Download voor Mac
+          <a class="btn primary lg" href="#install">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            Draai het vanaf GitHub
           </a>
           <a class="btn ghost lg" href="https://github.com/customerimpact/gridhive" rel="noopener">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
@@ -135,7 +131,7 @@
             Open de web-app
           </a>
         </div>
-        <p class="fine">v0.0.8 · Windows 10/11 x64 · macOS 12+ (Apple Silicon &amp; Intel) · Linux: <span class="mono">npx gridhive</span> · <a href="/quickstart">Quickstart-gids</a></p>
+        <p class="fine">v0.0.8 · Windows, macOS &amp; Linux · Node 20+ · <a href="https://github.com/customerimpact/gridhive" rel="noopener">Broncode op GitHub</a> · <a href="/quickstart">Quickstart-gids</a></p>
       </div>
 
       <div class="wrap wide">
@@ -519,8 +515,8 @@
           </li>
           <li class="card">
             <span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2.5"/><path d="M8 21h8M12 17v4"/><circle cx="18" cy="7" r="2.5" fill="currentColor" stroke="none"/></svg></span>
-            <h3>Een echte app voor Windows &amp; Mac</h3>
-            <p>Icoon in het systeemvak of de menubalk, badge op de taakbalk of in het Dock, en native meldingen. Zet consoles op een tweede scherm en kies uit vier thema's.</p>
+            <h3>Draait op elke computer</h3>
+            <p>Windows, macOS of Linux, in je browser. Zet consoles op een tweede scherm en kies uit vier thema's.</p>
           </li>
         </ul>
       </div>
@@ -633,30 +629,28 @@
           <div class="req card">
             <h3>Vereisten</h3>
             <ul>
-              <li><b>Windows 10 of 11</b> (x64), of <b>macOS 12 of nieuwer</b> (Apple Silicon of Intel) voor de desktop-app</li>
+              <li><b>Windows, macOS of Linux</b></li>
+              <li><b><a href="https://nodejs.org" rel="noopener">Node.js 20</a></b> of nieuwer, en <b><a href="https://git-scm.com" rel="noopener">git</a></b></li>
               <li><b><a href="https://docs.claude.com/en/docs/claude-code" rel="noopener">Claude Code</a></b> geïnstalleerd en ingelogd. Draai eerst één keer <span class="mono">claude</span> in een terminal.</li>
-              <li><b>Linux, of geen installer:</b> <span class="mono">npx gridhive</span> (vereist Node 20+)</li>
             </ul>
           </div>
           <ol class="howto">
             <li class="card">
               <span class="n">1</span>
               <div>
-                <h3>Download de app</h3>
-                <p>Windows: <span class="mono">GridHive-Setup-0.0.8.exe</span>. Mac: de schijfkopie voor jouw chip. Twijfel je? Apple-menu &rarr; <b>About This Mac</b> (Over deze Mac): "Apple M1/M2/M3/M4…" is Apple Silicon, "Intel" is Intel.</p>
-                <div class="dl-row" id="install-mac">
-                  <a class="btn primary" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-Setup-0.0.8.exe" rel="noopener">Windows</a>
-                  <a class="btn primary" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-0.0.8-arm64.dmg" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.75-.96 2.79 1.02.08 2.05-.52 2.68-1.27Z"/></svg> Mac · Apple Silicon</a>
-                  <a class="btn ghost" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-0.0.8-x64.dmg" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.75-.96 2.79 1.02.08 2.05-.52 2.68-1.27Z"/></svg> Mac · Intel</a>
-                </div>
+                <h3>Haal de code van GitHub</h3>
+                <p>Clone de repository, of klik op <a href="https://github.com/customerimpact/gridhive" rel="noopener">GitHub</a> op <b>Code &rarr; Download ZIP</b> en pak het bestand uit.</p>
+                <pre><code><span class="pr">$</span> git clone https://github.com/customerimpact/gridhive
+<span class="pr">$</span> cd gridhive</code></pre>
               </div>
             </li>
             <li class="card">
               <span class="n">2</span>
               <div>
-                <h3>Installeer en sta de app de eerste keer toe</h3>
-                <p><b>Windows:</b> de app installeert alleen voor jouw gebruiker, zonder adminrechten. Hij is nog niet code-signed, dus Windows kan <em>"Windows protected your PC"</em> (Uw pc is beveiligd door Windows) tonen. Klik op <b>More info</b> (Meer informatie) en daarna op <b>Run anyway</b> (Toch uitvoeren).</p>
-                <p><b>Mac:</b> open de schijfkopie en sleep GridHive naar <b>Applications</b>. De app is nog niet door Apple gesigneerd, dus de eerste start wordt geblokkeerd: open <b>System Settings &rarr; Privacy &amp; Security</b> (Systeeminstellingen &rarr; Privacy en beveiliging), scrol naar beneden, klik op <b>Open Anyway</b> (Toch openen) en bevestig. Dat doe je maar één keer. Nieuwe versies zie je verschijnen in het menu in de menubalk.</p>
+                <h3>Installeer en start het</h3>
+                <pre><code><span class="pr">$</span> npm install &amp;&amp; npm run build
+<span class="pr">$</span> npm start   <span class="cm"># opent het board in je browser</span></code></pre>
+                <p>Laat de terminal open: als je hem sluit, stoppen je agents. Kan <span class="mono">npm install</span> <span class="mono">node-pty</span> niet bouwen? Installeer dan de build tools voor je platform (Visual Studio Build Tools met C++ op Windows, Xcode Command Line Tools op macOS, <span class="mono">build-essential</span> op Linux).</p>
               </div>
             </li>
             <li class="card">
@@ -670,25 +664,13 @@
         </div>
         <div class="source card" id="npx">
           <div class="source-head">
-            <h3>Of draai het met npx <span class="muted">(Windows, macOS, Linux)</span></h3>
+            <h3>Sneller: draai het met npx <span class="muted">(geen clone nodig)</span></h3>
             <button class="copy-btn" type="button" data-copy="npx gridhive">
               <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Kopieer</span>
             </button>
           </div>
           <pre><code><span class="pr">$</span> npx gridhive   <span class="cm"># start het board en opent het in je browser</span></code></pre>
           <p class="source-note">Vereist Node 20 of nieuwer. Voeg <span class="mono">--port 5000</span> toe voor een andere poort, of installeer het één keer met <span class="mono">npm i -g gridhive</span> en draai <span class="mono">gridhive</span>.</p>
-        </div>
-        <div class="source card">
-          <div class="source-head">
-            <h3>Draaien vanuit de broncode <span class="muted">(Windows, macOS, Linux)</span></h3>
-            <button class="copy-btn" type="button" data-copy="git clone https://github.com/customerimpact/gridhive && cd gridhive && npm install && npm run build && npm start">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Kopieer</span>
-            </button>
-          </div>
-          <pre><code><span class="pr">$</span> git clone https://github.com/customerimpact/gridhive
-<span class="pr">$</span> cd gridhive
-<span class="pr">$</span> npm install &amp;&amp; npm run build
-<span class="pr">$</span> npm start   <span class="cm"># opent het board in je browser</span></code></pre>
         </div>
       </div>
     </section>
@@ -726,16 +708,12 @@
             <p>Nee. Elke agent houdt zijn eigen permissieprompts. GridHive laat je weten wanneer er een wacht, en je beantwoordt hem vanuit de Actions-inbox.</p>
           </details>
           <details>
-            <summary>Is er een Mac-versie?</summary>
-            <p>Ja. Download hierboven de schijfkopie voor Apple Silicon (M1 en nieuwer) of voor Intel-Macs; je hebt macOS 12 of nieuwer nodig. De app is nog niet door Apple gesigneerd, dus sta hem één keer toe via System Settings &rarr; Privacy &amp; Security &rarr; <b>Open Anyway</b>. Op Linux draai je GridHive vanuit de broncode en gebruik je het in je browser.</p>
+            <summary>Werkt het op Mac en Linux?</summary>
+            <p>Ja. GridHive draait op Windows, macOS en Linux. Haal de code van GitHub (of draai <span class="mono">npx gridhive</span>) en gebruik het in je browser. Je hebt Node 20 of nieuwer nodig.</p>
           </details>
           <details>
             <summary>Waar worden mijn gegevens bewaard?</summary>
-            <p>Op je eigen pc. De layout van het board en je instellingen staan in <span class="mono">~/.gridhive</span> in je thuismap. Gesprekken blijven in de eigen mappen van Claude Code. De desktop-app doet zelf maar één netwerkaanroep: hij checkt GitHub Releases op updates.</p>
-          </details>
-          <details>
-            <summary>Waarom zegt Windows "Windows protected your PC"?</summary>
-            <p>De installer is nog niet code-signed, dus SmartScreen herkent hem niet. Klik op <b>More info</b> (Meer informatie) en daarna op <b>Run anyway</b> (Toch uitvoeren). De volledige broncode en de build-workflow staan op GitHub, als je alles liever zelf controleert of bouwt.</p>
+            <p>Op je eigen pc. De layout van het board en je instellingen staan in <span class="mono">~/.gridhive</span> in je thuismap. Gesprekken blijven in de eigen mappen van Claude Code.</p>
           </details>
           <details>
             <summary>Is GridHive verbonden aan Anthropic?</summary>
@@ -754,8 +732,7 @@
           <h2>Klaar om je hive te laten draaien?</h2>
           <p class="sub">Gratis, open source en binnen twee minuten aan de slag op je eigen machine.</p>
           <div class="ctas">
-            <a class="btn primary lg" href="https://github.com/customerimpact/gridhive/releases/download/desktop-v0.0.8/GridHive-Setup-0.0.8.exe" rel="noopener">Download voor Windows</a>
-            <a class="btn primary lg" href="#install-mac"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.82-.81-3-.79-1.54.02-2.96.9-3.76 2.27-1.6 2.78-.41 6.9 1.15 9.15.76 1.1 1.67 2.34 2.86 2.3 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.76-2.23.87-1.28 1.23-2.52 1.25-2.58-.03-.01-2.4-.92-2.42-3.66ZM14.1 5.84c.63-.77 1.06-1.83.94-2.89-.91.04-2.01.61-2.66 1.37-.58.67-1.09 1.75-.96 2.79 1.02.08 2.05-.52 2.68-1.27Z"/></svg> Download voor Mac</a>
+            <a class="btn primary lg" href="#install">Draai het vanaf GitHub</a>
             <a class="btn ghost lg" href="https://github.com/customerimpact/gridhive" rel="noopener">Geef een ster op GitHub</a>
           </div>
           <form class="waitlist" id="waitlist" novalidate>
@@ -781,7 +758,7 @@
         <p>De controlekamer voor je coding agents in de terminal. Gratis en onder MIT-licentie. Een onafhankelijk open-sourceproject, niet verbonden aan of goedgekeurd door Anthropic, OpenAI, Google of xAI.</p>
       </div>
       <nav class="foot-cols" aria-label="Voettekst">
-        <div><h4>Product</h4><a href="#features">Functies</a><a href="#compare">Vergelijken</a><a href="#install">Download</a><a href="/app">Open de web-app</a></div>
+        <div><h4>Product</h4><a href="#features">Functies</a><a href="#compare">Vergelijken</a><a href="#install">Aan de slag</a><a href="/app">Open de web-app</a></div>
         <div><h4>Ontwikkelaars</h4><a href="/quickstart">Quickstart</a><a href="/developers">Gids voor developers</a><a href="/developers#recipes">Recepten &amp; badges</a><a href="https://github.com/customerimpact/gridhive/releases" rel="noopener">Changelog</a></div>
         <div><h4>Community</h4><a href="https://github.com/customerimpact/gridhive" rel="noopener">GitHub</a><a href="https://github.com/customerimpact/gridhive/issues" rel="noopener">Meld een probleem</a></div>
         <div><h4>Juridisch</h4><a href="/privacy">Privacy</a><a href="https://github.com/customerimpact/gridhive/blob/main/LICENSE" rel="noopener">Licentie</a><a href="https://github.com/customerimpact/gridhive/blob/main/TRADEMARKS.md" rel="noopener">Handelsmerken</a></div>
@@ -790,7 +767,7 @@
     <p class="wrap foot-copy">&copy; 2026 GridHive · Claude, Codex, Gemini, Grok en OpenCode zijn handelsmerken van hun eigenaars.</p>
   </footer>
 
-  <script src="/main.js?v=ea593a37c1" defer></script>
+  <script src="/main.js?v=320cf193fe" defer></script>
   <script src="/hero-demo.js?v=0579434e29" defer></script>
 </body>
 </html>
